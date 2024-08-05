@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.bg-lavender-pink {
+    background-color: #FFC4EB;
+}
+
+.bg-pale-purple {
+    background-color: #FFE4FA;
+}
+
+.bg-olivine {
+    background-color: #ABC798;
+}
+
+.top-bar p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+header .nav-link {
+    color: #333;
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
+header .nav-link:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    padding: 50px 0;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+.icons .fas {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust based on your carousel height */
+/* } */
+
+/* .carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image scales without distortion */
+/* }  */
+.shop-collection img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.shop-collection img:hover {
+    transform: scale(1.05);
+}
+
+.shop-collection h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.shop-collection {
+    position: relative;
+    overflow: hidden;
+}
+
+.new-in img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.new-in img:hover {
+    transform: scale(1.05);
+}
+
+.new-in {
+    margin-top: 20px;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Store - Swap or Sell</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/thrift.css">
+</head>
+<body>
+    <div class="top-bar bg-pale-purple text-center py-2">
+        <p class="mb-0">Use code MINI-PROJECT & get FLAT 15% OFF</p>
+    </div>
+    
+    <header class="bg-white py-3 border-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="/images/logo.png" alt="Logo" style="height: 60px; width:100px">
+            </div>
+            <nav class="nav">
+                <a class="nav-link" href="#">Home</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Shop
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Clothing</a>
+                        <a class="dropdown-item" href="#">Accessories</a>
+                        <a class="dropdown-item" href="#">Shoes</a>
+                    </div>
+                </div>
+                <a class="nav-link" href="#">Nisha x Kind Closet</a>
+                <!-- <a class="nav-link" href="#">Debasree X Kind Closet</a> -->
+                <a class="nav-link" href="#">Sell/Swap Your Closet</a>
+                <a class="nav-link" href="#">About Us</a>
+            </nav>
+            <div class="icons d-flex align-items-center">
+                <!-- <div class="dropdown">
+                    <button class="btn btn-link dropdown-toggle" type="button" id="currencyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        INR ₹ | India
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="currencyDropdown">
+                        <a class="dropdown-item" href="#">USD $ | USA</a>
+                        <a class="dropdown-item" href="#">EUR € | Europe</a>
+                    </div>
+                </div> -->
+                <div class="container mt-1">
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle" type="button" id="currencyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            INR ₹ | India
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="currencyDropdown">
+                            <a class="dropdown-item" href="#">USD $ | USA</a>
+                            <a class="dropdown-item" href="#">EUR € | Europe</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <a href="#" class="ml-4"> <i class="fa fa-search"></i></a>
+                <a href="#" class="ml-4"><i class="fas fa-user"></i></a>
+                <a href="#" class="ml-4"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner bg-lavender-pink text-white text-center">
+            <div class="container">
+                <div id="nishaCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#nishaCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#nishaCarousel" data-slide-to="1"></li>
+                        <li data-target="#nishaCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <img src="https://i.pinimg.com/474x/92/c7/93/92c793dc7458cf42b9240c0416407689.jpg" class="img-fluid" alt="Thrifty Threads 1">
+                                </div>
+                                <div class="col-md-6">
+                                    <h1>Shop for a Cause</h1>
+                                    <p>WITH THRIFTER</p>
+                                    <p> Our curated collection of pre-loved clothing, accessories, and home goods offers unique finds at unbeatable prices. By choosing thrift, you’re not only saving money but also supporting a sustainable lifestyle and reducing waste. Join us in celebrating the beauty of second chances and the joy of discovering hidden treasures. Shop smart, shop sustainably, and make a positive impact with every purchase.</p>
+                                    <!-- <p>Shop online at: www.bombayclosetcleanse.in</p>
+                                    <p>Thrift shop Versova</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <!-- <img src="https://i.pinimg.com/474x/a7/3f/73/a73f736b6ab099c55798aab05bc30f5d.jpg" class="img-fluid" alt="Thrifty Threads 2"> -->
+                                    <img src=" https://i.pinimg.com/474x/4e/30/f4/4e30f44bbe9419268fbe93bf2ad9cbfb.jpg" class="img-fluid" alt="Thrifty Threads 2">
+                                </div>
+                                <div class="col-md-6">
+                                    <h1>Shop for a Cause</h1>
+                                    <p>WITH THRIFTER</p>
+                                    <p> Our curated collection of pre-loved clothing, accessories, and home goods offers unique finds at unbeatable prices. By choosing thrift, you’re not only saving money but also supporting a sustainable lifestyle and reducing waste. Join us in celebrating the beauty of second chances and the joy of discovering hidden treasures. Shop smart, shop sustainably, and make a positive impact with every purchase.</p>
+                                    <!-- <p>Shop online at: www.bombayclosetcleanse.in</p> -->
+                                    <!-- <p>Thrift shop Versova</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <img src="https://i.pinimg.com/474x/fa/ab/93/faab9356e755169f01ef5ec67d2884d0.jpg" class="img-fluid" alt="Thrifty Threads 3">
+                                </div>
+                                <div class="col-md-6">
+                                    <h1>Shop for a Cause</h1>
+                                    <p>WITH THRIFTER</p>
+                                    <p> Our curated collection of pre-loved clothing, accessories, and home goods offers unique finds at unbeatable prices. By choosing thrift, you’re not only saving money but also supporting a sustainable lifestyle and reducing waste. Join us in celebrating the beauty of second chances and the joy of discovering hidden treasures. Shop smart, shop sustainably, and make a positive impact with every purchase.</p>
+                                    <!-- <p>Shop online at: www.bombayclosetcleanse.in</p>
+                                    <p>Thrift shop Versova</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#nishaCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#nishaCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Shop By Collection</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 shop-collection">
+                <img src="https://bombayclosetcleanse.in/cdn/shop/collections/D2107453-AB77-4470-ADD6-913FBAE4114C.png?v=1711630404&width=535" alt="Men">
+                
+            </div>
+            <div class="col-md-3 col-sm-6 shop-collection">
+                <img src="https://bombayclosetcleanse.in/cdn/shop/collections/8CA0FD31-2C7A-417F-8086-AEFF7E2C7D28.png?v=1711630373&width=535" alt="Women">
+                
+            </div>
+            <div class="col-md-3 col-sm-6 shop-collection">
+                <img src="https://bombayclosetcleanse.in/cdn/shop/collections/1080_1080_10.png?v=1711630333&width=535" alt="Shop Local">
+               
+            </div>
+            <div class="col-md-3 col-sm-6 shop-collection">
+                <img src="https://bombayclosetcleanse.in/cdn/shop/collections/UPCYCLED.png?v=1711630293&width=535" alt="Upcycled">
+              
+            </div>
+        </div>
+        <!-- <div class="row new-in">
+            <div class="col text-center">
+                <h2>New In - Men</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-sm-4">
+                <img src="https://bombayclosetcleanse.in/cdn/shop/files/upload9223368955665315620.jpg?v=1722670499&width=360" alt="New In 1">
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240712_122804593.jpg?v=1720787518&width=360" alt="New In 2" style="height: 200px;">
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <img src="https://bombayclosetcleanse.in/cdn/shop/files/IMG-20240728_182916.jpg?v=1722171912&width=360" alt="New In 3" >
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <img src="https://bombayclosetcleanse.in/cdn/shop/files/IMG-20240727_170929.jpg?v=1722081229&width=360" alt="New In 4">
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <img src="path/to/new_in_5.jpg" alt="New In 5">
+            </div>
+        </div>
+    </div> -->
+    <footer class="bg-olivine py-3 m-2">
+        <div class="container text-center">
+            <p>© 2024 Thrift Store. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
