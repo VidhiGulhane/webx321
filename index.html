@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Store - Swap or Sell</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/thrift.css">
+    <link rel="stylesheet" href="/script.js">
+</head>
+<body>
+    <div class="top-bar bg-pale-purple text-center py-2">
+        <p class="mb-0">Use code MINI-PROJECT & get FLAT 15% OFF</p>
+    </div>
+    
+    <header class="bg-white py-3 border-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="/images/logo.png" alt="Logo" style="height: 60px; width:100px">
+            </div>
+            <!-- <nav class="nav">
+                <a class="nav-link" href="#">Home</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Shop
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Clothing</a>
+                        <a class="dropdown-item" href="#">Accessories</a>
+                        <a class="dropdown-item" href="#">Shoes</a>
+                    </div>
+                </div>
+                <a class="nav-link" href="#">Nisha x Kind Closet</a>
+                <a class="nav-link" href="#">Sell/Swap Your Closet</a>
+                <a class="nav-link" href="#">About Us</a>
+            </nav> -->
+            <!-- <div class="icons d-flex align-items-center">
+                <div class="container mt-1">
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle" type="button" id="currencyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            INR ₹ | India
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="currencyDropdown">
+                            <a class="dropdown-item" href="#">USD $ | USA</a>
+                            <a class="dropdown-item" href="#">EUR € | Europe</a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <a href="#" class="ml-4"> <i class="fa fa-search"></i></a> -->
+                <!-- <div class="container mt-5">
+                    <div class="text-right">
+                        <div class="search-container">
+                            <i class="fa fa-search" id="search-icon" style="cursor: pointer;"></i>
+                            <input type="text" id="search-input" class="search-input" placeholder="Search">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="ml-4"><i class="fas fa-user"></i></a>
+                <a href="#" class="ml-4"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div> -->
+        <!-- <div class="container">
+            <nav class="nav">
+                <a class="nav-link" href="#">Home</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Shop
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Clothing</a>
+                        <a class="dropdown-item" href="#">Accessories</a>
+                        <a class="dropdown-item" href="#">Shoes</a>
+                    </div>
+                </div>
+                <a class="nav-link" href="#">Nisha x Kind Closet</a>
+                <a class="nav-link" href="#">Sell/Swap Your Closet</a>
+                <a class="nav-link" href="#">About Us</a>
+            </nav>
+        
+            <div class="icons">
+                <div class="dropdown">
+                    <button class="btn btn-link dropdown-toggle" type="button" id="currencyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        INR ₹ | India
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="currencyDropdown">
+                        <a class="dropdown-item" href="#">USD $ | USA</a>
+                        <a class="dropdown-item" href="#">EUR € | Europe</a>
+                    </div>
+                </div>
+        
+                <div class="search-container">
+                    <i class="fa fa-search" id="search-icon"></i>
+                    <input type="text" id="search-input" class="search-input" placeholder="Search">
+                </div>
+                
+                <a href="#" class="ml-4"><i class="fas fa-user"></i></a>
+                <a href="#" class="ml-4"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div> -->
+        <div class="navbar-container">
+            <nav class="navbar d-flex align-items-center">
+                <div class="left-section d-flex align-items-center">
+                    <a class="nav-link" href="#">Home</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            Shop
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Clothing</a>
+                            <a class="dropdown-item" href="#">Accessories</a>
+                            <a class="dropdown-item" href="#">Shoes</a>
+                        </div>
+                    </div>
+                    <a class="nav-link" href="#">Nisha x Kind Closet</a>
+                    <a class="nav-link" href="#sell-swap">Sell/Swap Your Closet</a>
+                    <a class="nav-link" href="#About us">About Us</a>
+                </div>
+                
+                <div class="right-section d-flex align-items-center">
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle" type="button" id="currencyDropdown" data-toggle="dropdown">
+                            INR ₹ | India
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="currencyDropdown">
+                            <a class="dropdown-item" href="#">USD $ | USA</a>
+                            <a class="dropdown-item" href="#">EUR € | Europe</a>
+                        </div>
+                    </div>
+                    <!-- <input type="text" id="search-input icons" class="search-input" placeholder="Search">
+                    <i class="fa fa-search ml-3" id="search-icon" style="cursor:pointer;"></i>
+                    <div class="dropdown"> -->
+                        <div class="navbar-right-icons">
+                            <div class="search-bar">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <button type="submit">
+                                    <img src="https://img.icons8.com/material-outlined/24/000000/search.png" alt="Search">
+                                </button>
+                            </div>
+                        <a class="icons dropdown-toggle m-4 nav-link" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="/RegisterNow/index.html">Login</a></li>
+                            <li><a class="dropdown-item" href="/RegisterNow/index.html">Sign-Up</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="ml-4 icons"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main>
+        <section class="banner bg-lavender-pink text-white text-center">
+            <div class="container">
+                <div id="nishaCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#nishaCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#nishaCarousel" data-slide-to="1"></li>
+                        <li data-target="#nishaCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <img src="https://i.pinimg.com/474x/92/c7/93/92c793dc7458cf42b9240c0416407689.jpg" class="img-fluid" alt="Thrifty Threads 1">
+                                </div>
+                                <div class="col-md-6">
+                                    <h1>Shop for a Cause</h1>
+                                    <p>WITH THRIFTER</p>
+                                    <p> Our curated collection of pre-loved clothing, accessories, and home goods offers unique finds at unbeatable prices. By choosing thrift, you’re not only saving money but also supporting a sustainable lifestyle and reducing waste. Join us in celebrating the beauty of second chances and the joy of discovering hidden treasures. Shop smart, shop sustainably, and make a positive impact with every purchase.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <img src=" https://i.pinimg.com/474x/4e/30/f4/4e30f44bbe9419268fbe93bf2ad9cbfb.jpg" class="img-fluid" alt="Thrifty Threads 2">
+                                </div>
+                                <div class="col-md-6">
+                                    <h1>Shop for a Cause</h1>
+                                    <p>WITH THRIFTER</p>
+                                    <p> Our curated collection of pre-loved clothing, accessories, and home goods offers unique finds at unbeatable prices. By choosing thrift, you’re not only saving money but also supporting a sustainable lifestyle and reducing waste. Join us in celebrating the beauty of second chances and the joy of discovering hidden treasures. Shop smart, shop sustainably, and make a positive impact with every purchase.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <img src="https://i.pinimg.com/474x/fa/ab/93/faab9356e755169f01ef5ec67d2884d0.jpg" class="img-fluid" alt="Thrifty Threads 3">
+                                </div>
+                                <div class="col-md-6">
+                                    <h1>Shop for a Cause</h1>
+                                    <p>WITH THRIFTER</p>
+                                    <p> Our curated collection of pre-loved clothing, accessories, and home goods offers unique finds at unbeatable prices. By choosing thrift, you’re not only saving money but also supporting a sustainable lifestyle and reducing waste. Join us in celebrating the beauty of second chances and the joy of discovering hidden treasures. Shop smart, shop sustainably, and make a positive impact with every purchase.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#nishaCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#nishaCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Shop By Collection</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 shop-collection">
+                <img src="https://bombayclosetcleanse.in/cdn/shop/collections/D2107453-AB77-4470-ADD6-913FBAE4114C.png?v=1711630404&width=535" alt="Men">
+            </div>
+            <div class="col-md-3 col-sm-6 shop-collection">
+                <img src="https://bombayclosetcleanse.in/cdn/shop/collections/8CA0FD31-2C7A-417F-8086-AEFF7E2C7D28.png?v=1711630373&width=535" alt="Women">
+            </div>
+            <div class="col-md-3 col-sm-6 shop-collection">
+                <img src="https://bombayclosetcleanse.in/cdn/shop/collections/1080_1080_10.png?v=1711630333&width=535" alt="Shop Local">
+            </div>
+            <div class="col-md-3 col-sm-6 shop-collection">
+                <img src="https://bombayclosetcleanse.in/cdn/shop/collections/UPCYCLED.png?v=1711630293&width=535" alt="Upcycled">
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT US STARTS HERE  -->
+        <section id="About us" style="padding: 50px 0; background-color: #F1DEDC;">
+            <div class="container text-center">
+                <h2 class="mb-4" style="font-family: 'Poppins', sans-serif; color: #333;">About Us</h2>
+                <p style="font-family: 'Poppins', sans-serif; color: #333; font-size: 18px; max-width: 800px; margin: 0 auto;">
+                    At Thrifter, we are committed to sustainable fashion that not only looks good but also does good. Our mission is to redefine fashion by offering eco-friendly, high-quality pieces that contribute to a healthier planet.
+                </p>
+                
+                <div class="row mt-5">
+                    <!-- Benefit 1 -->
+                    <div class="col-md-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-leaf" style="font-size: 48px; color: #ABC798;"></i>
+                        </div>
+                        <h4 style="font-family: 'Poppins', sans-serif; color: #333;">Eco-Friendly</h4>
+                        <p style="font-family: 'Poppins', sans-serif; color: #555;">
+                            Our products are crafted with sustainability in mind, reducing waste and promoting a circular economy.
+                        </p>
+                    </div>
+                    
+                    <!-- Benefit 2 -->
+                    <div class="col-md-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-recycle" style="font-size: 48px; color: #ABC798;"></i>
+                        </div>
+                        <h4 style="font-family: 'Poppins', sans-serif; color: #333;">Recycled Materials</h4>
+                        <p style="font-family: 'Poppins', sans-serif; color: #555;">
+                            We don't just sell used clothes. We recycle old garments, spin them into new yarn, and create unique fashion pieces from them.
+                        </p>
+                    </div>
+                    
+                    <!-- Benefit 3 -->
+                    <div class="col-md-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-tshirt" style="font-size: 48px; color: #ABC798;"></i>
+                        </div>
+                        <h4 style="font-family: 'Poppins', sans-serif; color: #333;">Quality & Style</h4>
+                        <p style="font-family: 'Poppins', sans-serif; color: #555;">
+                            Enjoy timeless fashion with a purpose. Our collection merges quality with conscious choices, making sustainability stylish.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mt-5" style="font-family: 'Poppins', sans-serif; color: #555; max-width: 800px; margin: 0 auto;">
+                    <p>
+                        By choosing Thrifter, you're not only making a fashion statement but also contributing to a better future. Together, let's embrace the beauty of second chances and the joy of discovering hidden treasures.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- about us ends -->
+    <!-- SELL & SWAP RULES AND CRITERIA + FORM  -->
+    <section id="sell-swap" style="padding: 50px 0; background-color: #fcfcfc;">
+        <div class="container">
+            <h2 class="text-center mb-4" style="font-family: 'Poppins', sans-serif; color: #333;">Sell/Swap Your Closet</h2>
+            
+            <!-- Rules Section -->
+            <div class="row text-center mb-5">
+                <!-- Rule 1 -->
+                <div class="col-md-4">
+                    <i class="fas fa-check-circle" style="font-size: 48px; color: #ABC798;"></i>
+                    <h4 class="mt-3" style="font-family: 'Poppins', sans-serif; color: #333;">Well Maintained Clothes</h4>
+                    <p style="font-family: 'Poppins', sans-serif; color: #555;">We accept only well-maintained clothing in good condition.</p>
+                </div>
+                
+                <!-- Rule 2 -->
+                <div class="col-md-4">
+                    <i class="fas fa-soap" style="font-size: 48px; color: #ABC798;"></i>
+                    <h4 class="mt-3" style="font-family: 'Poppins', sans-serif; color: #333;">Washed Before Sending</h4>
+                    <p style="font-family: 'Poppins', sans-serif; color: #555;">Please ensure all clothing is washed before sending it to us.</p>
+                </div>
+                
+                <!-- Rule 3 -->
+                <div class="col-md-4">
+                    <i class="fas fa-box-open" style="font-size: 48px; color: #ABC798;"></i>
+                    <h4 class="mt-3" style="font-family: 'Poppins', sans-serif; color: #333;">Pack and Send</h4>
+                    <p style="font-family: 'Poppins', sans-serif; color: #555;">Pack your items securely before sending them to ensure they arrive in good condition.</p>
+                </div>
+            </div>
+            
+            <!-- How Swap Pricing Works -->
+            <div class="text-center mb-5" style="font-family: 'Poppins', sans-serif; color: #333;">
+                <h4>How Does Swap Pricing Work?</h4>
+                <p style="font-family: 'Poppins', sans-serif; color: #555;">
+                    The final amount will be decided based on the relevance, condition, and brand of the clothing. The prices we offer for preloved clothing are a small fraction of the current value. 
+                    <br><br>
+                    <strong>Please Note:</strong> 1/10th of the current price is the highest we can go in most cases! For example, if you bought a top from a brand's new collection for 1800/- and a similar item is currently on sale online for 700/-, its current value is 700/-. You will receive 70 swap points or less for it, depending on the condition and style relevance.
+                </p>
+                
+                <h5 class="mt-4" style="font-family: 'Poppins', sans-serif; color: #333;">Why 1/10th?</h5>
+                <p style="font-family: 'Poppins', sans-serif; color: #555;">
+                    With fast fashion producing billions of clothes every year, there is an oversupply of pre-loved clothing, and demand is less, leading to poor resale value for used clothing. Sorry 🙁
+                </p>
+                
+                <h5 class="mt-4" style="font-family: 'Poppins', sans-serif; color: #333;">Is the 1/10th rule final?</h5>
+                <p style="font-family: 'Poppins', sans-serif; color: #555;">
+                    Yes. In the spirit of keeping everything standardized, we do not encourage bargaining! However, if you bring us super-trendy, rare, and valuable clothing, we are happy to talk shop.
+                </p>
+            </div>
+            
+            <!-- Selection Criteria -->
+            <div class="text-center mb-5" style="font-family: 'Poppins', sans-serif; color: #333;">
+                <h4>Selection Criteria:</h4>
+                <ul class="text-left" style="list-style-type: none; padding: 0; font-family: 'Poppins', sans-serif; color: #555; font-size: 18px;">
+                    <li>✅ We are accepting only well maintained western wear.</li>
+                    <li>❌ Faulty zippers, tears, stains, or pilling? Sorry, we'll have to pass. You can still choose to donate these to us 🙂</li>
+                    <li>🚫 Unbranded clothing - we will not accept anything without a label.</li>
+                    <li>👠 Sorry, no shoes for now.</li>
+                    <li>👗 Casual kurtis from brands like FabIndia, Biba, or Global Desi? Bring 'em on but please expect extremely low rates!</li>
+                    <li>🚫 Ethnic wear, heavy gowns, and used lingerie (for obvious reasons) aren't our current jam.</li>
+                    <li>🚫 Underwear, swimwear, and intimates for hygiene purposes.</li>
+                </ul>
+            </div>
+    
+            <!-- Terms and Conditions Form -->
+            <div class="text-center" style="font-family: 'Poppins', sans-serif; color: #333;">
+                <h4>Agree to Terms & Conditions</h4>
+                <form action="#" method="post" style="max-width: 600px; margin: 0 auto;">
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input" id="agreeTerms" required> <!-- required karne pr alert msg aayega-->
+                        <label class="form-check-label" for="agreeTerms" style="font-family: 'Poppins', sans-serif; color: #555;">I agree to all terms and conditions. I understand that if my clothes don't sell within a 3-month period, they will be donated to charity.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="background-color: #ABC798; border: none; font-family: 'Poppins', sans-serif;">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+     <!-- sell swap ends  -->
+    <footer class="bg-olivine py-3 m-2">
+        <div class="container text-center">
+            <p>© 2024 Thrift Store. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
