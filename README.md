@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Women Clothing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .categories {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 65px;
+        }
+        .categories img {
+            margin-right: 10px;
+            max-width: 350px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .categories img:hover {
+            transform: scale(1.05);
+        }
+        .buttons {
+            text-align: center;
+            padding-top: 30px;
+        }
+        .buttons button {
+            background-color: #000;
+            color: #fff;
+            padding: 15px 50px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s;
+            margin: 10px;
+            box-shadow: 0 2px 4px #0003;
+        }
+        .buttons button:hover {
+            background-color: #444;
+        }
+        .filters {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .filters select {
+            font-size: 16px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .range {
+            display: flex;
+            align-items: center;
+        }
+        .range input {
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-size: 16px;
+            margin-left: 5px;
+            width: 100px;
+        }
+        .currency {
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        .highest-price {
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+        .product-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+          margin-top: 20px;
+      }
+      .product-item {
+          background-color: white;
+          border-radius: 8px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          padding: 10px;
+          text-align: center;
+      }
+      .product-item img {
+          width: 90%;
+          height: auto;
+          border-radius: 5px;
+      }
+      .product-title {
+          font-size: 16px;
+          margin: 10px 0 5px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+      }
+      .product-price {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 10px;
+      }
+      .size-buttons {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+      }
+      .size-buttons button {
+          background-color: #e1e1e1;
+          border: none;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          font-weight: bold;
+      }
+      .size-buttons button:hover {
+          background-color: #ccc;
+      }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 50px; font-weight:bold; justify-content:center; display:flex"> WOMEN </h1>
+
+    
+    <div class="categories">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/collections/TOPS.png?v=1711627080&width=750" alt="tops">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/collections/DRESSES.png?v=1711627325&width=750" alt="dresses">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/collections/SKIRTS.jpg?v=1711627359&width=750" alt="bottoms">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/collections/Accessories.png?v=1711627504&width=750" alt="accessories">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/collections/JACKETS_1.png?v=1711627410&width=750" alt="Jacket">
+    </div>
+
+    <!-- Size Buttons Section -->
+    <div class="buttons">
+        <button>XS</button>
+        <button>S</button>
+        <button>M</button>
+        <button>L</button>
+        <button>XL</button>
+    </div>
+
+    <!-- Filters Section -->
+    <div class="filters">
+        <!-- Filter By Availability -->
+        <div>
+            <label for="availability">Filter:</label>
+            <select id="availability" onchange="filterProducts()">
+                <option value="all">All</option>
+                <option value="in-stock">In stock</option>
+                <option value="out-of-stock">Out of stock</option>
+            </select>
+        </div>
+        
+        <!-- Sort By Date -->
+        <div>
+            <label for="sort">Sort by:</label>
+            <select id="sort" onchange="sortProducts()">
+                <option value="new">Date, new to old</option>
+                <option value="old">Date, old to new</option>
+            </select>
+        </div>
+
+        <!-- Price Range Filter -->
+        <div>
+            <label>Price:</label>
+            <div class="range">
+             
+                <div class="currency">₹</div>
+                <input type="number" placeholder="From">
+                <div class="currency">₹</div>
+                <input type="number" placeholder="To">
+            </div>
+        </div>
+    </div>
+    <!-- Tops-->
+    <div class="product-grid">
+      <div class="product-item">
+          <img src="https://bombayclosetcleanse.in/cdn/shop/files/rn-image_picker_lib_temp_01adf865-cff0-459e-9f73-5d1241e4250a.jpg?v=1727780213&width=360" alt="Product 1">
+          <p class="product-title">Denim Crop Top</p>
+          <p class="product-price">Rs. 650.00</p>
+          <div class="size-buttons">
+              <button>M</button>
+          </div>
+      </div>
+      <div class="product-item">
+          <img src="https://bombayclosetcleanse.in/cdn/shop/files/D8FD13D9-BF4E-40EE-8D74-F301A2585BED.jpg?v=1720434009&width=360" alt="Product 2">
+          <p class="product-title">H&M Ribbed off</p>
+          <p class="product-price">Rs. 890.00</p>
+          <div class="size-buttons">
+              <button>M</button>
+          </div>
+      </div>
+      <div class="product-item">
+          <img src="https://bombayclosetcleanse.in/cdn/shop/files/IMG-6776.webp?v=1722073856" alt="Product 3">
+          <p class="product-title">Zara black</p>
+          <p class="product-price">Rs. 999.00</p>
+          <div class="size-buttons">
+              <button>XL</button>
+          </div>
+      </div>
+      <div class="product-item">
+          <img src="https://bombayclosetcleanse.in/cdn/shop/files/IMG-7029.webp?v=1722328441" alt="Product 4">
+          <p class="product-title">H&M Black</p>
+          <p class="product-price">Rs. 650.00</p>
+          <div class="size-buttons">
+              <button>M</button>
+          </div>
+      </div>
+  </div>
+  <!-- dresses-->
+  <div class="product-grid">
+    <div class="product-item">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/monki-black_denim_dungaree_dre_1627812577_31f5e1d8_progressive.jpg?v=1727800763&width=360" alt="Product 1">
+        <p class="product-title">Black Denim</p>
+        <p class="product-price">Rs. 950.00</p>
+        <div class="size-buttons">
+            <button>M</button>
+        </div>
+    </div>
+    <div class="product-item">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/f4c53c6f-10ba-4cec-ad12-26e09684f21b-1200x_jpg.jpg?v=1727797299&width=360" alt="Product 2">
+        <p class="product-title">Linen blend  dress
+        </p>
+        <p class="product-price">Rs. 1,150.00</p>
+        <div class="size-buttons">
+            <button>M</button>
+        </div>
+    </div>
+    <div class="product-item">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/rn-image_picker_lib_temp_8c6d9f8e-a103-476e-97a8-737fe81f364c.jpg?v=1727796162&width=360" alt="Product 3">
+        <p class="product-title"> Cherry Print
+        </p>
+        <p class="product-price">Rs. 999.00</p>
+        <div class="size-buttons">
+            <button>XL</button>
+        </div>
+    </div>
+    <div class="product-item">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/IMG-9180.webp?v=1727781952&width=360" alt="Product 4">
+        <p class="product-title">Gathered eyelet
+        </p>
+        <p class="product-price">Rs. 1000.00</p>
+        <div class="size-buttons">
+            <button>M</button>
+        </div>
+    </div>
+</div>
+<!-- bottoms -->
+<div class="product-grid">
+  <div class="product-item">
+      <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20241001_133613361.jpg?v=1727789900&width=360" alt="Product 1">
+      <p class="product-title">Red Multicolor Skirt</p>
+      <p class="product-price">Rs. 990.00</p>
+      <div class="size-buttons">
+          <button>M</button>
+      </div>
+  </div>
+  <div class="product-item">
+      <img src="https://bombayclosetcleanse.in/cdn/shop/files/DA1999E2-0687-4BAD-8F8E-E96476097315-1.jpg?v=1709380253&width=360" alt="Product 2">
+      <p class="product-title">blue denim skirt</p>
+      <p class="product-price">Rs. 1,650.00</p>
+      <div class="size-buttons">
+          <button>M</button>
+      </div>
+  </div>
+  <div class="product-item">
+      <img src="https://bombayclosetcleanse.in/cdn/shop/files/26B5CAAF-C0FF-47C2-B106-53D3C87534BD.jpg?v=1711177267&width=360" alt="Product 3">
+      <p class="product-title">Wide Leg Jeans
+      </p>
+      <p class="product-price">Rs. 1,999.00</p>
+      <div class="size-buttons">
+          <button>XL</button>
+      </div>
+  </div>
+  <div class="product-item">
+      <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240302_112611024.jpg?v=1709380518&width=360" alt="Product 4">
+      <p class="product-title">Denim Skirt
+      </p>
+      <p class="product-price">Rs. 2,650.00</p>
+      <div class="size-buttons">
+          <button>M</button>
+      </div>
+  </div>
+</div>
+<!--acc-->
+<div class="product-grid">
+  <div class="product-item">
+      <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240813_090930511.jpg?v=1723540408&width=360" alt="Product 1">
+      <p class="product-title">Coral Charm
+      </p>
+      <p class="product-price">Rs.650.00</p>
+      
+  </div>
+  <div class="product-item">
+      <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240813_083735929.jpg?v=1723538675&width=360" alt="Product 2">
+      <p class="product-title"> Chunky chic earrings
+      </p>
+      <p class="product-price">Rs. 950.00</p>
+     
+  </div>
+  <div class="product-item">
+      <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240813_072726644.jpg?v=1723534381&width=360" alt="Product 3">
+      <p class="product-title"> Seashell earring</p>
+      <p class="product-price">Rs. 999.00</p>
+      
+  </div>
+  <div class="product-item">
+      <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240813_111226862.jpg?v=1723548053&width=360" alt="Product 4">
+      <p class="product-title">Cascade Drops
+        .</p>
+      <p class="product-price">Rs. 850.00</p>
+      
+  </div>
+</div>
+<!--jackets-->
+<div class="product-grid">
+  <div class="product-item">
+      <img src="https://bombayclosetcleanse.in/cdn/shop/files/CAC76376-EDBB-4002-8754-77D025A03705.jpg?v=1711190597&width=360" alt="Product 1">
+      <p class="product-title">Diamond Heartstring</p>
+      <p class="product-price">Rs. 2,500.00</p>
+      <div class="size-buttons">
+          <button>M</button>
+      </div>
+  </div>
+  <div class="product-item">
+      <img src="https://bombayclosetcleanse.in/cdn/shop/files/6D67A0D6-34A4-4B7A-A2BD-A98E57D9C685.jpg?v=1711187539&width=360" alt="Product 2">
+      <p class="product-title">Lady face patchwork</p>
+      <p class="product-price">Rs. 1,800.00</p>
+      <div class="size-buttons">
+          <button>M</button>
+      </div>
+  </div>
+  <div class="product-item">
+      <img src="https://bombayclosetcleanse.in/cdn/shop/files/6142A689-F0CD-4A1F-B523-B4D0C07A2FD8.jpg?v=1711190085&width=360" alt="Product 3">
+      <p class="product-title">Rebel patchwork</p>
+      <p class="product-price">Rs. 1,999.00</p>
+      <div class="size-buttons">
+          <button>XL</button>
+      </div>
+  </div>
+  <div class="product-item">
+      <img src="https://bombayclosetcleanse.in/cdn/shop/files/EABF54A4-0422-4BC2-902A-EE30EEAEC6C1.jpg?v=1711191046&width=360" alt="Product 4">
+      <p class="product-title">Midnight Canvas Artistry Jacket</p>
+      <p class="product-price">Rs. 6,650.00</p>
+      <div class="size-buttons">
+          <button>M</button>
+      </div>
+  </div>
+</div>
+
+
+
+    <script>
+        const filterProducts = () => {
+            const filterValue = document.getElementById("availability").value;
+            const products = document.querySelectorAll(".product");
+
+            products.forEach(product => {
+                const stockStatus = product.getAttribute("data-stock");
+                product.style.display = (filterValue === "all" || filterValue === stockStatus) ? "block" : "none";
+            });
+        };
+
+        const sortProducts = () => {
+            const sortValue = document.getElementById("sort").value;
+            const productList = document.getElementById("productList");
+            const products = Array.from(document.querySelectorAll(".product"));
+
+            products.sort((a, b) => {
+                const dateA = new Date(a.getAttribute("data-date"));
+                const dateB = new Date(b.getAttribute("data-date"));
+                return sortValue === "new" ? dateB - dateA : dateA - dateB;
+            });
+
+            productList.innerHTML = "";
+            products.forEach(product => productList.appendChild(product));
+        };
+    </script>
+
+</body>
+</html>
