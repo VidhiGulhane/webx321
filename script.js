@@ -73,7 +73,7 @@ function addBotMessage(message) {
 // Get Bot Response
 function getBotResponse(message) {
     const responses = {
-        "hello": "Hi there! What can I assist you with?",
+        "hello": "Hi there! How can I assist you with?",
         "how does swapping work?": "You can list your items for swap, and if someone is interested, you can exchange items directly with them and earn through it .",
         "how do I sell?": "To sell, simply upload the details of your item, set a price, and wait for buyers to reach out.",
         "do you have any discounts?": "We often run promotions! Check our 'Offers' section for current discounts."
