@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <div class="container product-page">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Bootstrap Carousel for product images -->
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Main Image 1 (Default Active) -->
+            <div class="carousel-item active">
+              <img src="https://bombayclosetcleanse.in/cdn/shop/files/IMG-0220.jpg?v=1713338761&width=713" class="d-block w-100 img-fluid" alt="Product Image 1">
+            </div>
+            <!-- Additional Images -->
+            <div class="carousel-item">
+              <img src="https://bombayclosetcleanse.in/cdn/shop/files/IMG-8589.jpg?v=1713338761&width=713" class="d-block w-100 img-fluid" alt="Product Image 2">
+            </div>
+            <div class="carousel-item">
+              <img src="https://bombayclosetcleanse.in/cdn/shop/files/IMG-8593.jpg?v=1713338761&width=713" class="d-block w-100 img-fluid" alt="Product Image 3">
+            </div>
+          </div>
+        </div>
+        <!-- Thumbnail Images for Carousel control -->
+        <div class="product-thumbnails d-flex justify-content-center mt-3">
+          <img src="https://bombayclosetcleanse.in/cdn/shop/files/IMG-0220.jpg?v=1713338761&width=713" alt="Thumbnail 1" class="img-thumbnail mx-2 thumbnail-image" data-bs-target="#productCarousel" data-bs-slide-to="0">
+          <img src="https://bombayclosetcleanse.in/cdn/shop/files/IMG-8589.jpg?v=1713338761&width=713" alt="Thumbnail 2" class="img-thumbnail mx-2 thumbnail-image" data-bs-target="#productCarousel" data-bs-slide-to="1">
+          <img src="https://bombayclosetcleanse.in/cdn/shop/files/IMG-8593.jpg?v=1713338761&width=713" alt="Thumbnail 3" class="img-thumbnail mx-2 thumbnail-image" data-bs-target="#productCarousel" data-bs-slide-to="2">
+        </div>
+      </div>
+
+      <!-- Product Info -->
+      <div class="col-md-6">
+        <h1 class="product-title">DOG Heart Patched Tee</h1>
+        <p class="product-subtitle">tie die tee</p>
+        <h2 class="product-price"></h2>
+        <p class="product-sizes">Size: 
+          <button class="btn btn-outline-primary btn-sm">S</button>
+          <button class="btn btn-outline-primary btn-sm">M</button>
+        </p>
+        <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+
+        <!-- Product details -->
+        <div class="product-details mt-4">
+          <h5>Details</h5>
+          <table class="table table-bordered">
+            <tr><td>Material</td><td>cotton</td></tr>
+            <tr><td>Dimensions</td><td>35.5 x 26.4 x 12.9 cm</td></tr>
+            <tr><td>Weight</td><td>0.66 kg</td></tr>
+            
+            
+        
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="describe">
+        <h1 class="Disclaimer">Disclaimer</h1>
+        <p class="product-subtitle"> Disclaimer: Bombay Closet Cleanse is not affiliated with above brand.<br> The product is a pre-loved piece that's just waiting to be adored! By choosing it, you're not just adding to your wardrobe<br> – you're championing sustainability and reducing fashion waste.<br> Brand name and/or photographs are respectively the Trademark and Copyright of original brand.<br> Happy Thrifting!</p>
+
+    <!-- Recommended Products -->
+    <div class="recommended-products mt-5">
+      <h3>Recommended Products</h3>
+      <div class="row">
+        <div class="col-md-3 text-center">
+          <img src="https://fossil.scene7.com/is/image/FossilPartners/ZB1434200_main?$sfcc_fos_medium$" class="img-fluid" alt="Product 1">
+          <p>Crossbody Bag</p>
+          <p>100</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="https://m.media-amazon.com/images/I/71VmLcwyj5L._AC_UY1100_.jpg" class="img-fluid" alt="Product 2">
+          <p>black skort </p>
+          <p>400</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1695457335_2236257.jpg?v=2" class="img-fluid" alt="Product 3">
+          <p>Calssic black tee</p>
+          <p>200</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

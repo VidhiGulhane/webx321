@@ -22,6 +22,7 @@
             max-width: 230px;
             border-radius: 8px;
             transition: transform 0.3s;
+            cursor: pointer;
         }
         .categories img:hover {
             transform: scale(1.05);
@@ -79,7 +80,7 @@
             font-weight: normal;
         }
         .product-grid {
-          display: grid;
+          display: none;
           grid-template-columns: repeat(4, 1fr);
           gap: 20px;
           margin-top: 20px;
@@ -126,16 +127,18 @@
           background-color: #ccc;
       }
     </style>
+    
 </head>
 <body>
+    <h1 style="font-size: 50px; font-weight:bold; justify-content:center; display:flex">MEN</h1>
 
     <!-- Image Categories Section -->
     <div class="categories">
-        <img src="https://bombayclosetcleanse.in/cdn/shop/collections/T-SHIRTS_1.png?v=1711626729&width=390" alt="T-Shirts">
-        <img src="https://bombayclosetcleanse.in/cdn/shop/collections/printed_Shirts.png?v=1711627191&width=390" alt="Printed Shirts">
-        <img src="https://bombayclosetcleanse.in/cdn/shop/collections/1080_1080_9.png?v=1711626824&width=390" alt="Casual Wear">
-        <img src="https://bombayclosetcleanse.in/cdn/shop/collections/4.png?v=1711627132&width=390" alt="Formal Wear">
-        <img src="https://bombayclosetcleanse.in/cdn/shop/collections/5.png?v=1711626911&width=390" alt="Jeans">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/collections/T-SHIRTS_1.png?v=1711626729&width=390" alt="T-Shirts" onclick="showProducts(1)">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/collections/printed_Shirts.png?v=1711627191&width=390" alt="Printed Shirts" onclick="showProducts(2)">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/collections/1080_1080_9.png?v=1711626824&width=390" alt="Casual Wear" onclick="showProducts(3)">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/collections/4.png?v=1711627132&width=390" alt="Formal Wear" onclick="showProducts(4)">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/collections/5.png?v=1711626911&width=390" alt="Jeans" onclick="showProducts(5)">
     </div>
 
     <!-- Size Buttons Section -->
@@ -146,9 +149,8 @@
         <button>L</button>
         <button>XL</button>
     </div>
-
-    <!-- Filters Section -->
-    <div class="filters">
+     <!-- Filters Section -->
+     <div class="filters">
         <!-- Filter By Availability -->
         <div>
             <label for="availability">Filter:</label>
@@ -180,8 +182,11 @@
             </div>
         </div>
     </div>
-    <!-- Tees-->
-    <div class="product-grid">
+
+    <!-- Products Grids (Each grid corresponds to a category of products) -->
+    
+    <div id="category-1" class="product-grid">
+      <!-- Tees-->
       <div class="product-item">
           <img src="https://bombayclosetcleanse.in/cdn/shop/files/B2D2F50E-926B-4078-B768-549908E12CB1.jpg?v=1727529293&width=360" alt="Product 1">
           <p class="product-title">Live To Sail Rhodes...</p>
@@ -215,8 +220,9 @@
           </div>
       </div>
   </div>
-  <!-- Shirts-->
-  <div class="product-grid">
+
+  <div id="category-2" class="product-grid">
+    <!-- Printed Shirts-->
     <div class="product-item">
         <img src="https://bombayclosetcleanse.in/cdn/shop/products/IMG_8413.heic?v=1681126869&width=360" alt="Product 1">
         <p class="product-title">Ruby Block Print Shirt</p>
@@ -227,8 +233,7 @@
     </div>
     <div class="product-item">
         <img src="https://bombayclosetcleanse.in/cdn/shop/products/IMG_8150.heic?v=1681126980&width=360" alt="Product 2">
-        <p class="product-title">Raven Shirt
-        </p>
+        <p class="product-title">Raven Shirt</p>
         <p class="product-price">Rs. 650.00</p>
         <div class="size-buttons">
             <button>M</button>
@@ -236,162 +241,144 @@
     </div>
     <div class="product-item">
         <img src="https://bombayclosetcleanse.in/cdn/shop/products/IMG_3575.heic?v=1680521996&width=360" alt="Product 3">
-        <p class="product-title"> Block Print Shirt
-        </p>
+        <p class="product-title">Block Print Shirt</p>
         <p class="product-price">Rs. 999.00</p>
         <div class="size-buttons">
             <button>XL</button>
         </div>
     </div>
+        <div class="product-item">
+            <img src="https://bombayclosetcleanse.in/cdn/shop/files/43a986449fd883ac4b5de38e314a7396.jpg?v=1725618542" alt="Product 3">
+            <p class="product-title"> Print Shirt</p>
+            <p class="product-price">Rs. 1,999.00</p>
+            <div class="size-buttons">
+                <button>XL</button>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="category-3" class="product-grid">
+    <!-- jacket -->
     <div class="product-item">
-        <img src="https://bombayclosetcleanse.in/cdn/shop/products/PXL_20220717_122621633.jpg?v=1658061443&width=360" alt="Product 4">
-        <p class="product-title">Raven Block Print Shirt
-        </p>
-        <p class="product-price">Rs. 950.00</p>
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/Home.jpg?v=1728391451&width=360" alt="Casual Product 1">
+        <p class="product-title">back print jacket</p>
+        <p class="product-price">Rs. 1,850.00</p>
+        <div class="size-buttons">
+            <button>L</button>
+        </div>
+    </div>
+    <div class="product-item">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240908_104904394.jpg?v=1725793422&width=360" alt="Casual Product 2">
+        <p class="product-title">jacket</p>
+        <p class="product-price">Rs. 2,700.00</p>
         <div class="size-buttons">
             <button>M</button>
         </div>
     </div>
-</div>
-<!-- jacket -->
-<div class="product-grid">
-  <div class="product-item">
-      <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240927_140648539.jpg?v=1727448613&width=360" alt="Product 1">
-      <p class="product-title">Ziphoodie Dickies The Original</p>
-      <p class="product-price">Rs. 3,650.00</p>
-      <div class="size-buttons">
-          <button>M</button>
-      </div>
-  </div>
-  <div class="product-item">
-      <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240908_111940329.jpg?v=1725893042&width=360" alt="Product 2">
-      <p class="product-title">Sport-Tek By Port.</p>
-      <p class="product-price">Rs. 1,650.00</p>
-      <div class="size-buttons">
-          <button>M</button>
-      </div>
-  </div>
-  <div class="product-item">
-      <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240908_103852618.jpg?v=1725793729&width=360" alt="Product 3">
-      <p class="product-title">Qing Yuan Shui Jacket
-      </p>
-      <p class="product-price">Rs. 1,999.00</p>
-      <div class="size-buttons">
-          <button>XL</button>
-      </div>
-  </div>
-  <div class="product-item">
-      <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240908_111118717.jpg?v=1725794134&width=360" alt="Product 4">
-      <p class="product-title">Shui Jacket
-      </p>
-      <p class="product-price">Rs. 2,650.00</p>
-      <div class="size-buttons">
-          <button>M</button>
-      </div>
-  </div>
-</div>
-<!--Pants-->
-<div class="product-grid">
-  <div class="product-item">
-      <img src="https://bombayclosetcleanse.in/cdn/shop/files/131128-group-1.jpg?v=1725552555&width=360" alt="Product 1">
-      <p class="product-title">Quicksilver Denim Vintage Jeans
-      </p>
-      <p class="product-price">Rs. 1,650.00</p>
-      <div class="size-buttons">
-          <button>M</button>
-      </div>
-  </div>
-  <div class="product-item">
-      <img src="https://bombayclosetcleanse.in/cdn/shop/files/204639636-1-y2kwashedblack.jpg?v=1725550198&width=360" alt="Product 2">
-      <p class="product-title"> Denim Vintage Jeans
-      </p>
-      <p class="product-price">Rs. 2,650.00</p>
-      <div class="size-buttons">
-          <button>M</button>
-      </div>
-  </div>
-  <div class="product-item">
-      <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240905_121416907.jpg?v=1725539263&width=360" alt="Product 3">
-      <p class="product-title"> Jack Vintage </p>
-      <p class="product-price">Rs. 3,999.00</p>
-      <div class="size-buttons">
-          <button>XL</button>
-      </div>
-  </div>
-  <div class="product-item">
-      <img src="https://bombayclosetcleanse.in/cdn/shop/files/52abd56e7c59a1c85fcdf5d856556b18.jpg?v=1725552752&width=360" alt="Product 4">
-      <p class="product-title"> Vintage Jeans
-        .</p>
-      <p class="product-price">Rs. 2,650.00</p>
-      <div class="size-buttons">
-          <button>M</button>
-      </div>
-  </div>
-</div>
-<!--Luxe-->
-<div class="product-grid">
-  <div class="product-item">
-      <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240826_110524358.jpg?v=1724672938&width=360" alt="Product 1">
-      <p class="product-title">Air Jordan Red Hoodie.</p>
-      <p class="product-price">Rs. 2,500.00</p>
-      <div class="size-buttons">
-          <button>M</button>
-      </div>
-  </div>
-  <div class="product-item">
-      <img src="https://bombayclosetcleanse.in/cdn/shop/files/909E6620-C97F-441E-B4C0-37BCAE67FA78.jpg?v=1710923688&width=360" alt="Product 2">
-      <p class="product-title">Christian Louboutin Grafitti Studded Sneakers</p>
-      <p class="product-price">Rs. 18,000.00</p>
-      <div class="size-buttons">
-          <button>M</button>
-      </div>
-  </div>
-  <div class="product-item">
-      <img src="https://bombayclosetcleanse.in/cdn/shop/files/D-NQ_NP_2X_996538-MLA73963614016_012024-F.webp?v=1722268234&width=360" alt="Product 3">
-      <p class="product-title">Drew Graphic Printed Hoodie</p>
-      <p class="product-price">Rs. 14,999.00</p>
-      <div class="size-buttons">
-          <button>XL</button>
-      </div>
-  </div>
-  <div class="product-item">
-      <img src="https://bombayclosetcleanse.in/cdn/shop/files/12EB891A-74AD-4183-983F-7812D1568729.jpg?v=1719400853&width=360" alt="Product 4">
-      <p class="product-title">Heron Preston Ministry of Defence Camouflage Hoodie.</p>
-      <p class="product-price">Rs. 36,650.00</p>
-      <div class="size-buttons">
-          <button>M</button>
-      </div>
-  </div>
-</div>
+    <div class="product-item">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240908_101925235.jpg?v=1725791271&width=360" alt="Casual Product 3">
+        <p class="product-title">Vintage jacket</p>
+        <p class="product-price">Rs. 1,750.00</p>
+        <div class="size-buttons">
+            <button>XL</button>
+        </div>
+     </div>
+     <div class="product-item">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240908_111940329.jpg?v=1725893042&width=360" alt="Casual Product 3">
+        <p class="product-title">Jacket Pullover</p>
+        <p class="product-price">Rs. 2,750.00</p>
+        <div class="size-buttons">
+            <button>XL</button>
+        </div>
+     </div>
 
+    </div>
+  </div>
 
+  <div id="category-4" class="product-grid">
+    <!-- pants-->
+    <div class="product-item">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/IMG-20240905_214503.jpg?v=1725553096&width=360" alt="Formal Product 1">
+        <p class="product-title">Adidas Blue</p>
+        <p class="product-price">Rs. 2,950.00</p>
+        <div class="size-buttons">
+            <button>L</button>
+        </div>
+    </div>
+    <div class="product-item">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/204639636-1-y2kwashedblack.jpg?v=1725550198&width=360" alt="Formal Product 2">
+        <p class="product-title">Suit Pants</p>
+        <p class="product-price">Rs. 1,500.00</p>
+        <div class="size-buttons">
+            <button>M</button>
+        </div>
+    </div>
+    <div class="product-item">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/131128-group-1.jpg?v=1725552555&width=360" alt="Formal Product 3">
+        <p class="product-title">Classic cargo</p>
+        <p class="product-price">Rs. 2,000.00</p>
+        <div class="size-buttons">
+            <button>L</button>
+        </div>
+    </div>
+    <div class="product-item">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240831_100334785.jpg?v=1725106470&width=360" alt="Formal Product 3">
+        <p class="product-title">Pants</p>
+        <p class="product-price">Rs. 2,000.00</p>
+        <div class="size-buttons">
+            <button>L</button>
+        </div>
+    </div>
+  </div>
 
-    <script>
-        const filterProducts = () => {
-            const filterValue = document.getElementById("availability").value;
-            const products = document.querySelectorAll(".product");
+  <div id="category-5" class="product-grid">
+    <!-- Jeans-->
+    <div class="product-item">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/D-NQ_NP_2X_996538-MLA73963614016_012024-F.webp?v=1722268234&width=360" alt="Jeans Product 1">
+        <p class="product-title">Graphic Printed hoodie</p>
+        <p class="product-price">Rs. 1,200.00</p>
+        <div class="size-buttons">
+            <button>M</button>
+        </div>
+    </div>
+    <div class="product-item">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240826_110659843.jpg?v=1724672767&width=360" alt="Jeans Product 2">
+        <p class="product-title"> Drew House Jacket </p>
+        <p class="product-price">Rs. 1,400.00</p>
+        <div class="size-buttons">
+            <button>L</button>
+        </div>
+    </div>
+    <div class="product-item">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/909E6620-C97F-441E-B4C0-37BCAE67FA78.jpg?v=1710923688&width=360" alt="Jeans Product 3">
+        <p class="product-title">Christian Louboutin Grafitti Studded Sneakers</p>
+        <p class="product-price">Rs. 15,600.00</p>
+        <div class="size-buttons">
+            <button>XL</button>
+        </div>
+    </div>
+    <div class="product-item">
+        <img src="https://bombayclosetcleanse.in/cdn/shop/files/7E4A515E-31F7-4230-B1B3-4D6AE301782F.jpg?v=1726736789&width=360" alt="Jeans Product 3">
+        <p class="product-title">LOUIS VUITTON LV Initial Monogram Belt</p>
+        <p class="product-price">Rs. 9,600.00</p>
+        <div class="size-buttons">
+            <button>XL</button>
+        </div>
+    </div>
+  </div>
 
-            products.forEach(product => {
-                const stockStatus = product.getAttribute("data-stock");
-                product.style.display = (filterValue === "all" || filterValue === stockStatus) ? "block" : "none";
-            });
-        };
-
-        const sortProducts = () => {
-            const sortValue = document.getElementById("sort").value;
-            const productList = document.getElementById("productList");
-            const products = Array.from(document.querySelectorAll(".product"));
-
-            products.sort((a, b) => {
-                const dateA = new Date(a.getAttribute("data-date"));
-                const dateB = new Date(b.getAttribute("data-date"));
-                return sortValue === "new" ? dateB - dateA : dateA - dateB;
-            });
-
-            productList.innerHTML = "";
-            products.forEach(product => productList.appendChild(product));
-        };
-    </script>
+  <script>
+    function showProducts(category) {
+        // Hide all categories
+        document.querySelectorAll('.product-grid').forEach(function(grid) {
+            grid.style.display = 'none';
+        });
+        
+        // Show the selected category
+        document.getElementById('category-' + category).style.display = 'grid';
+    }
+  </script>
 
 </body>
 </html>
