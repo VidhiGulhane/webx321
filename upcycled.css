@@ -1,0 +1,396 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo h1 {
+    color: #e6007a;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filters, .category-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters label,
+.category-buttons label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#size-filter button,
+.category-buttons button {
+    padding: 10px 20px;
+    background-color: #c999ff;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+#size-filter button.active,
+.category-buttons button.active {
+    background-color: #b588d7;
+    border: 10px solid #a675c1;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.product a:hover {
+    opacity: 0.9;
+}
+
+.product img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+} */
+ /* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FEFEFF; /* Light gray background */
+    margin: 0;
+    padding: 20px;
+    color: #011638; /* Dark navy color for text */
+}
+
+/* Section: Intro */
+.intro {
+    text-align: center;
+    padding: 20px;
+    color: #364156;
+}
+
+.intro h2 {
+    color: #011638;
+    font-size: 3rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+/* Filter Section Styling */
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.category-buttons button {
+    background-color: #b19cd9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+    background-color: #8962d6; /* Darker lavender */
+}
+
+.filters {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#price-filter, #size-filter {
+    display: inline-block;
+    margin: 10px;
+}
+
+#size-filter button {
+    background-color: #b19cd9;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#size-filter button:hover {
+    background-color: #8962d6;
+}
+
+#size-filter button.active {
+    background-color: #5DA271;
+}
+
+/* Products Section */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px auto;
+}
+
+.product {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product p {
+    font-size: 1.1rem;
+    color: #011638;
+    margin: 10px 0;
+}
+
+ /* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FEFEFF; /* Light background color */
+    margin: 0;
+    padding: 20px;
+    color: #011638; /* Dark navy text color */
+}
+
+/* Product Grid Styling */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product {
+    background-color: #FFF; /* White background for products */
+    border: 1px solid #CCD6E0; /* Light border */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #CCD6E0;
+    display: block;
+}
+
+.product a {
+    display: block;
+    color: #1B75D0; /* French Blue for text */
+    font-size: 1.1rem;
+    margin: 10px 0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.product a:hover {
+    color: #5DA271; /* Jade color on hover */
+}
+
+.product-price {
+    font-size: 1rem;
+    color: #364156; /* Prussian Blue for price */
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust grid for smaller screens */
+    }
+}
+
+/* Intro Section Styling */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #FEFEFF; /* Light background */
+    color: #011638; /* Dark navy text color */
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #233143; /* Prussian Blue */
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Category Buttons Styling */
+.category-buttons {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.category-buttons label {
+    font-size: 1.2rem;
+    color: #364156; /* Prussian Blue */
+    margin-right: 10px;
+}
+
+.category-buttons button {
+    background-color: #1B75D0; /* French Blue */
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+    background-color: #5DA271; /* Jade color on hover */
+}
+
+.category-buttons button:focus {
+    outline: 2px solid #233143; /* Prussian Blue outline on focus */
+}
+
+/* Filters Section Styling */
+.filters {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.filters label {
+    font-size: 1.2rem;
+    color: #364156; /* Prussian Blue */
+    margin-bottom: 10px;
+    display: block;
+}
+
+.filters select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #CCD6E0; /* Light border */
+    border-radius: 5px;
+    background-color: #FFF;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Size Filter Buttons */
+#size-filter {
+    margin: 20px 0;
+}
+
+#size-filter button {
+    background-color: #233143; /* Prussian Blue */
+    color: #FFF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#size-filter button:hover {
+    background-color: #5DA271; /* Jade on hover */
+}
+
+#size-filter button:focus {
+    outline: 2px solid #1B75D0; /* French Blue on focus */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+    .category-buttons button,
+    #size-filter button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .filters select {
+        font-size: 0.9rem;
+    }
+}

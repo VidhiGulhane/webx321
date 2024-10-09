@@ -7,7 +7,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/thrift.css">
-    <link rel="stylesheet" href="/script.js">
+    <script src="/script.js"></script>
 </head>
 <body>
     <div class="top-bar bg-pale-purple text-center py-2">
@@ -108,12 +108,12 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Clothing</a>
-                            <a class="dropdown-item" href="#">Accessories</a>
-                            <a class="dropdown-item" href="#">Shoes</a>
+                            <a class="dropdown-item" href="/women/women.html">Women</a>
+                            <a class="dropdown-item" href="/women/men.html">Men</a>
                         </div>
                     </div>
                     <a class="nav-link" href="#">Nisha x Kind Closet</a>
-                    <a class="nav-link" href="#sell-swap">Sell/Swap Your Closet</a>
+                    <a class="nav-link" href="/a.html">Sell/Swap Your Closet</a>
                     <a class="nav-link" href="#About us">About Us</a>
                 </div>
                 
@@ -211,6 +211,45 @@
             </div>
         </section>
     </main>
+     <!-- Chatbot Section -->
+    <!-- <div id="chatbot-container" class="chatbot-container">
+        <div class="chatbot-header">
+            <h5>Chatbot</h5>
+            <button id="chatbot-close-btn">X</button>
+        </div>
+        <div class="chatbot-body">
+            <div id="chat-log" class="chatbot-messages"></div>
+            <div class="chatbot-input-section">
+                <input type="text" id="user-input" placeholder="Type your message..." onkeypress="detectEnter(event)" />
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+      Chatbot Icon -->
+     <!-- <div id="chatbot-icon" class="chatbot-icon" onclick="toggleChatbot()">
+        <i class="fas fa-comment-dots"></i>
+    </div> --> 
+    <div id="chatbot-container" class="chatbot-container" style="display: none;">
+        <div class="chatbot-header">
+            <h5>Chatbot</h5>
+            <button id="chatbot-close-btn">X</button>
+        </div>
+        <div class="chatbot-body">
+            <div id="chat-log" class="chatbot-messages"></div>
+            <div class="chatbot-input-section">
+                <input type="text" id="user-input" placeholder="Type your message..." onkeypress="detectEnter(event)" />
+                <button id="send-btn" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Chatbot Icon -->
+    <!-- <div id="chatbot-icon" class="chatbot-icon" onclick="toggleChatbot()">
+        <i class="fas fa-comment-dots"></i>
+    </div> -->
+    <div id="chatbot-icon" class="chatbot-icon" onclick="toggleChatbot()">
+        <i class="fas fa-comment-dots"></i>
+    </div> 
     
     <div class="container">
         <div class="row">
@@ -220,16 +259,16 @@
         </div>
         <div class="row">
             <div class="col-md-3 col-sm-6 shop-collection">
-                <img src="https://bombayclosetcleanse.in/cdn/shop/collections/D2107453-AB77-4470-ADD6-913FBAE4114C.png?v=1711630404&width=535" alt="Men">
+                <a href="/women/men.html"><img src="https://bombayclosetcleanse.in/cdn/shop/collections/D2107453-AB77-4470-ADD6-913FBAE4114C.png?v=1711630404&width=535" alt="Men"></a>
             </div>
             <div class="col-md-3 col-sm-6 shop-collection">
-                <img src="https://bombayclosetcleanse.in/cdn/shop/collections/8CA0FD31-2C7A-417F-8086-AEFF7E2C7D28.png?v=1711630373&width=535" alt="Women">
+                <a href="/women/women.html"><img src="https://bombayclosetcleanse.in/cdn/shop/collections/8CA0FD31-2C7A-417F-8086-AEFF7E2C7D28.png?v=1711630373&width=535" alt="Women"></a>
             </div>
             <div class="col-md-3 col-sm-6 shop-collection">
                 <img src="https://bombayclosetcleanse.in/cdn/shop/collections/1080_1080_10.png?v=1711630333&width=535" alt="Shop Local">
             </div>
             <div class="col-md-3 col-sm-6 shop-collection">
-                <img src="https://bombayclosetcleanse.in/cdn/shop/collections/UPCYCLED.png?v=1711630293&width=535" alt="Upcycled">
+               <a href="/upcycled.html"> <img src="https://bombayclosetcleanse.in/cdn/shop/collections/UPCYCLED.png?v=1711630293&width=535" alt="Upcycled"></a>
             </div>
         </div>
     </div>
