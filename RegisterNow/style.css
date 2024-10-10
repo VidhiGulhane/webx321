@@ -47,7 +47,7 @@ body{
 }
 
 .container button{
-    background-color: #28a745;
+    background-color: #eec4f9;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -61,7 +61,7 @@ body{
 }
 
 .container button:hover{
-    background-color: #063903;
+    background-color: #f291f2;
 }
 
 .container button.hidden{
@@ -165,9 +165,9 @@ body{
 }
 
 .toggle{
-    background-color: linear-gradient(to left, #14db21, #181a24);
+    background-color: linear-gradient(to left, #eaa9d9, #f165d0);
     height: 100%;
-    background: linear-gradient(to right,  #181a24 , #14db21);
+    background: linear-gradient(to right,  #f45fe0 , #f4a4f0);
     color: #fff;
     position: relative;
     left: -100%;
