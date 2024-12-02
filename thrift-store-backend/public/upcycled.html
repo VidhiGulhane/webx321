@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcycled Collection</title>
+    <link rel="stylesheet" href="upcycled.css">
+
+</head>
+<body>
+    
+    <!-- Main Content -->
+    <main>
+        <section class="intro">
+            <h2 style="font-size: 2.5rem; font-weight: bold;">Upcycled Collection</h2>
+            <p>
+                Introducing our Regen Collection - upcycled gems using discarded fabrics to make BRAND NEW masterpieces.
+                Be sure to make heads turn in these!
+                Since these are all meticulously made to order,
+                please allow up to 2 weeks for delivery.
+            </p>
+        </section>
+
+        <!-- Category Buttons -->
+        <section class="category-buttons">
+            <label>Filter by Category:</label>
+            <button data-category="jackets">Jackets</button>
+            <button data-category="pants">Pants</button>
+            <button data-category="tees">Tees</button>
+            <button data-category="skirts">Skirts</button>
+            <button data-category="corsets">Corsets</button>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filters">
+            <label for="price-filter">Filter by Price:</label>
+            <select id="price-filter"><br><br>
+                <option value="all">All Prices</option>
+                <option value="0-1000">₹0 - ₹1000</option>
+                <option value="1000-3000">₹1000 - ₹3000</option>
+                <option value="3000-5000">₹3000 - ₹5000</option>
+                <option value="5000-above">₹5000 and above</option>
+            </select>
+
+            <!-- Size Buttons -->
+            <br><br><label for="size-filter">Filter by Size:</label>
+            <div id="size-filter">
+                <button data-size="XS">XS</button>
+                <button data-size="S">S</button>
+                <button data-size="M">M</button>
+                <button data-size="L">L</button>
+                <button data-size="XL">XL</button>
+                <button data-size="XXL">XXL</button>
+                <button data-size="all">All Sizes</button>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products" id="product-list">
+            <div class="product" data-price="2200" data-size="M" data-category="jackets">
+                <a href="product-link-1.html">
+                    <img src="https://bombayclosetcleanse.in/cdn/shop/files/54F206DE-2870-4075-B4F8-8A6493487CA5.jpg?v=1711179968&width=360" alt="denim">
+                    <p>zara straight fit black Denim - ₹2200</p>
+                </a>
+            </div>
+            <div class="product" data-price="3500" data-size="L" data-category="jackets">
+                <a href="product-link-2.html">
+                    <img src="https://bombayclosetcleanse.in/cdn/shop/files/CAC76376-EDBB-4002-8754-77D025A03705.jpg?v=1711190597&width=360" alt="Jacket 2">
+                    <p>Regen Upcycled Denim Jacket - ₹3500</p>
+                </a>
+            </div>
+            <div class="product" data-price="1950" data-size="XS" data-category="tees">
+                <a href="/thrift-store-backend/public/carts.html">
+                    <img src="https://bombayclosetcleanse.in/cdn/shop/files/IMG-0220.jpg?v=1713338761&width=360" alt="Jacket 1">
+                    <p>skull canvas tee - ₹1950</p>
+                </a>
+            </div>
+            <div class="product" data-price="1950" data-size="XS" data-category="tees">
+                <a href="product-link-4.html">
+                    <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240212_094223797.jpg?v=1707732255&width=360" alt="Jacket 1">
+                    <p>skull canvas tee - ₹1950</p>
+                </a>
+            </div>
+            <div class="product" data-price="150" data-size="S" data-category="skirts">
+                <a href="product-link-5.html">
+                    <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240804_113303638.jpg?v=1722772603&width=360" alt="holder">
+                    <p>key holder - ₹150</p>
+                </a>
+            </div>
+            <div class="product" data-price="8000" data-size="XXL" data-category="jackets">
+                <a href="product-link-6.html">
+                    <img src="https://bombayclosetcleanse.in/cdn/shop/files/2D0B04E2-FD98-429D-B36B-5C2EB73E51BD.jpg?v=1711187199&width=360" alt="Jacket 1">
+                    <p>wild and free Denim Jacket - ₹8000</p>
+                </a>
+            </div>
+            <div class="product" data-price="5500" data-size="L" data-category="tees">
+                <a href="product-link-7.html">
+                    <img src="https://bombayclosetcleanse.in/cdn/shop/files/PXL-20240111_101702207.jpg?v=1704976555&width=360" alt="t-shirt">
+                    <p>abstract handprinted tee - ₹5500</p>
+                </a>
+            </div>
+            <div class="product" data-price="4500" data-size="XS" data-category="jackets">
+                <a href="product-link-8.html">
+                    <img src="https://bombayclosetcleanse.in/cdn/shop/files/11C59FBC-F77F-4601-A5B7-0E540A7BCE10.jpg?v=1711199298&width=360" alt="Jacket 1">
+                    <p>purple patchwork denim Jacket - ₹4500</p>
+                </a>
+            </div>
+            <div class="product" data-price="1000" data-size="L" data-category="corsets">
+                <a href="product-link-9.html">
+                    <img src="https://bombayclosetcleanse.in/cdn/shop/files/IMG-8683.jpg?v=1711538929&width=360" alt="top">
+                    <p>bralette chained top - ₹1000</p>
+                </a>
+            </div>
+            <div class="product" data-price="2500" data-size="XL" data-category="skirts">
+                <a href="product-link-10.html">
+                    <img src="https://bombayclosetcleanse.in/cdn/shop/files/E8A103C6-0200-47A6-82F8-E139836A36F1.jpg?v=1711445729&width=360" alt="skort">
+                    <p>Zara black skort - ₹2500</p>
+                </a>
+            </div>
+            <!-- <div class="product" data-price="500" data-size="XXL" data-category="pants">
+                <a href="product-link-11.html">
+                    <img src="https://bombayclosetcleanse.in/cdn/shop/files/AA91C847-F76D-4A55-8518-AF30AF859DD6.jpg?v=1711184778&width=360" alt="blue denim pant">
+                    <p>blue denim pant - ₹500</p>
+                </a>
+            </div> -->
+            <div class="product" data-price="2500" data-size="XL" data-category="skirts">
+                <a href="product-link-10.html">
+                    <img src="https://bombayclosetcleanse.in/cdn/shop/files/E8A103C6-0200-47A6-82F8-E139836A36F1.jpg?v=1711445729&width=360" alt="skort">
+                    <p>Zara black skort - ₹2500</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Function to filter products based on price, size, and category
+        function filterProducts() {
+            const selectedPrice = document.getElementById('price-filter').value;
+            const selectedSize = document.querySelector('#size-filter button.active')?.getAttribute('data-size') || 'all';
+            const selectedCategory = document.querySelector('.category-buttons button.active')?.getAttribute('data-category') || 'all';
+            const products = document.querySelectorAll('.product');
+
+            products.forEach(product => {
+                const productPrice = parseInt(product.getAttribute('data-price'));
+                const productSize = product.getAttribute('data-size');
+                const productCategory = product.getAttribute('data-category');
+
+                // Check if the product matches the selected price range
+                let priceMatch = false;
+                if (selectedPrice === 'all') {
+                    priceMatch = true;
+                } else if (selectedPrice === '0-1000' && productPrice <= 1000) {
+                    priceMatch = true;
+                } else if (selectedPrice === '1000-3000' && productPrice > 1000 && productPrice <= 3000) {
+                    priceMatch = true;
+                } else if (selectedPrice === '3000-5000' && productPrice > 3000 && productPrice <= 5000) {
+                    priceMatch = true;
+                } else if (selectedPrice === '5000-above' && productPrice > 5000) {
+                    priceMatch = true;
+                }
+
+                // Check if the product matches the selected size
+                let sizeMatch = selectedSize === 'all' || selectedSize === productSize;
+
+                // Check if the product matches the selected category
+                let categoryMatch = selectedCategory === 'all' || selectedCategory === productCategory;
+
+                // Show or hide the product based on the filter match
+                if (priceMatch && sizeMatch && categoryMatch) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        // Function to enable button click events for size filters
+        function enableSizeButtons() {
+            const sizeButtons = document.querySelectorAll('#size-filter button');
+
+            sizeButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Remove active class from all buttons
+                    sizeButtons.forEach(btn => btn.classList.remove('active'));
+
+                    // Add active class to the clicked button
+                    this.classList.add('active');
+
+                    // Re-filter products based on the selected size
+                    filterProducts();
+                });
+            });
+        }
+
+        // Function to enable button click events for category filters
+        function enableCategoryButtons() {
+            const categoryButtons = document.querySelectorAll('.category-buttons button');
+
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Remove active class from all buttons
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+
+                    // Add active class to the clicked button
+                    this.classList.add('active');
+
+                    // Re-filter products based on the selected category
+                    filterProducts();
+                });
+            });
+        }
+
+        // Event listener for price filter dropdown
+        document.getElementById('price-filter').addEventListener('change', filterProducts);
+
+        // Initialize button functionalities and product filtering
+        enableSizeButtons();
+        enableCategoryButtons();
+        filterProducts();
+    </script>
+</body>
+</html>
